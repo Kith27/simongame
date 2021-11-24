@@ -4,6 +4,12 @@ var userPattern = []
 var game = false
 var level = 1
 currentLevel = 0
+$(document).click(function(){
+    if (game === false){
+        gameKey()
+        game = true
+    }
+})
 
 $(document).keydown(function(){
     if (game === false){
